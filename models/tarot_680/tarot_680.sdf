@@ -1,0 +1,48 @@
+<?xml version='1.0'?>
+<sdf version='1.5'>
+  <model name='tarot_680'>
+
+    <include>
+      <uri>model://tarot_680/components/hexacopter_tarot680</uri>
+    </include>
+
+    <include>
+      <uri>model://tarot_680/components/pi_cam</uri>
+      <pose>0 0 0.186 0 1.57 0</pose>
+    </include>
+    <joint name="pi_cam_joint" type="fixed">
+      <child>pi_cam::link</child>
+      <parent>hexacopter_tarot680::base_link</parent>
+    </joint>
+
+  
+    <include>
+      <uri>model://tarot_680/components/gps_with_stand</uri>
+      <pose>-0.07 0.03 0.24 0 0 0</pose>
+    </include>
+    <joint name='gps0_joint' type='fixed'>
+      <parent>hexacopter_tarot680::base_link</parent>
+      <child>gps::link</child>
+    </joint>
+
+
+    <include>
+      <uri>model://tarot_680/components/pixhawk2</uri>
+      <pose>0 0 0.24 0 0 0</pose>
+    </include>
+    <joint name="pixhawk2_joint" type="fixed">
+      <child>pixhawk2::link</child>
+      <parent>hexacopter_tarot680::base_link</parent>
+    </joint>
+
+
+    <include>
+      <uri>model://tarot_680/components/raspberry</uri>
+      <pose>0 -0.06 0.2425 0 0 0</pose>
+    </include>
+    <joint name="raspberry_joint" type="fixed">
+      <child>raspberry::link</child>
+      <parent>hexacopter_tarot680::base_link</parent>
+    </joint>
+  </model>
+</sdf>
