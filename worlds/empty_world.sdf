@@ -19,7 +19,10 @@
         filename="libignition-gazebo-scene-broadcaster-system.so"
         name="ignition::gazebo::systems::SceneBroadcaster">
     </plugin>
-
+    <plugin
+        filename="ignition-gazebo-imu-system"
+        name="gz::sim::systems::Imu">
+    </plugin>
     <gui fullscreen="0">
 
         <!-- 3D scene -->

@@ -55,6 +55,14 @@
       <gravity>1</gravity>
       <velocity_decay/>
       <self_collide>0</self_collide>
+
+      <sensor name="imu" type="imu">
+        <always_on>1</always_on>
+        <update_rate>100</update_rate>
+        <visualize>true</visualize>
+        <topic>typhoon/imu</topic>
+        <enable_metrics>true</enable_metrics>
+    </sensor>
     </link>
     
     <link name="cgo3_mount_link">
