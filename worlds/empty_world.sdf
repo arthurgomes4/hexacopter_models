@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <sdf version="1.7">
     
-<world name="test_world">
+<world name="empty_world">
     <physics name="1ms" type="ignored">
         <max_step_size>0.001</max_step_size>
         <real_time_factor>1.0</real_time_factor>
@@ -56,8 +56,8 @@
             <play_pause>true</play_pause>
             <step>true</step>
             <start_paused>true</start_paused>
-            <service>/world/drone_world/control</service>
-            <stats_topic>/world/drone_world/stats</stats_topic>
+            <service>/world/empty_world/control</service>
+            <stats_topic>/world/empty_world/stats</stats_topic>
         </plugin>
 
         <!-- World statistics -->
@@ -81,7 +81,7 @@
             <real_time>true</real_time>
             <real_time_factor>true</real_time_factor>
             <iterations>true</iterations>
-            <topic>/world/drone_world/stats</topic>
+            <topic>/world/empty_world/stats</topic>
 
         </plugin>
 
@@ -143,11 +143,11 @@
         <pose>0 1 1 0 0 0</pose>
     </include>
 
-    <include>
+    <!-- <include>
         <uri>model://f550</uri>
         <name>3</name>
         <pose>1 0 1 0 0 0</pose>
-    </include>
+    </include> -->
 
     <include>
         <uri>model://x4_uav</uri>

@@ -1471,280 +1471,138 @@
 			</physics>
         </joint>
 
-<!-- ######################################### /grip6 ############################################### -->
+        <!-- motor plugins -->
 
-<!-- ###################################### GRIPPER PLUGIN ########################################## -->
-	<!-- <plugin name="hex_gripper_control" filename="libgripper_plugin.so" /> -->
-<!-- ###################################### /GRIPPER PLUGIN ######################################### -->
+        <!-- topic control -->
 
-<!-- #####################################  MOTOR PLUGINS  ######################################### -->
-    <!-- <plugin name='front_right_motor_model' filename='librotors_gazebo_motor_model.so'>
-      <robotNamespace></robotNamespace>
-      <jointName>rotor_0_joint</jointName>
-      <linkName>rotor_0</linkName>
-      <turningDirection>ccw</turningDirection>
-      <timeConstantUp>0.0125</timeConstantUp>
-      <timeConstantDown>0.025</timeConstantDown>
-      <maxRotVelocity>1100</maxRotVelocity>
-      <motorConstant>8.54858e-06</motorConstant>
-      <momentConstant>0.06</momentConstant>
-      <commandSubTopic>/gazebo/command/motor_speed</commandSubTopic>
-      <motorNumber>4</motorNumber>
-      <rotorDragCoefficient>0.000806428</rotorDragCoefficient>
-      <rollingMomentCoefficient>1e-06</rollingMomentCoefficient>
-      <motorSpeedPubTopic>/motor_speed/4</motorSpeedPubTopic>
-      <rotorVelocitySlowdownSim>10</rotorVelocitySlowdownSim>
-    </plugin> -->
-
-    <!-- <plugin name='back_left_motor_model' filename='librotors_gazebo_motor_model.so'>
-      <robotNamespace></robotNamespace>
-      <jointName>rotor_1_joint</jointName>
-      <linkName>rotor_1</linkName>
-      <turningDirection>cw</turningDirection>
-      <timeConstantUp>0.0125</timeConstantUp>
-      <timeConstantDown>0.025</timeConstantDown>
-      <maxRotVelocity>1100</maxRotVelocity>
-      <motorConstant>8.54858e-06</motorConstant>
-      <momentConstant>0.06</momentConstant>
-      <commandSubTopic>/gazebo/command/motor_speed</commandSubTopic>
-      <motorNumber>5</motorNumber>
-      <rotorDragCoefficient>0.000806428</rotorDragCoefficient>
-      <rollingMomentCoefficient>1e-06</rollingMomentCoefficient>
-      <motorSpeedPubTopic>/motor_speed/5</motorSpeedPubTopic>
-      <rotorVelocitySlowdownSim>10</rotorVelocitySlowdownSim>
-    </plugin> -->
-
-    <!-- <plugin name='front_left_motor_model' filename='librotors_gazebo_motor_model.so'>
-      <robotNamespace></robotNamespace>
-      <jointName>rotor_2_joint</jointName>
-      <linkName>rotor_2</linkName>
-      <turningDirection>cw</turningDirection>
-      <timeConstantUp>0.0125</timeConstantUp>
-      <timeConstantDown>0.025</timeConstantDown>
-      <maxRotVelocity>1100</maxRotVelocity>
-      <motorConstant>8.54858e-06</motorConstant>
-      <momentConstant>0.06</momentConstant>
-      <commandSubTopic>/gazebo/command/motor_speed</commandSubTopic>
-      <motorNumber>2</motorNumber>
-      <rotorDragCoefficient>0.000806428</rotorDragCoefficient>
-      <rollingMomentCoefficient>1e-06</rollingMomentCoefficient>
-      <motorSpeedPubTopic>/motor_speed/2</motorSpeedPubTopic>
-      <rotorVelocitySlowdownSim>10</rotorVelocitySlowdownSim>
-    </plugin> -->
-
-    <!-- <plugin name='back_right_motor_model' filename='librotors_gazebo_motor_model.so'>
-      <robotNamespace></robotNamespace>
-      <jointName>rotor_3_joint</jointName>
-      <linkName>rotor_3</linkName>
-      <turningDirection>ccw</turningDirection>
-      <timeConstantUp>0.0125</timeConstantUp>
-      <timeConstantDown>0.025</timeConstantDown>
-      <maxRotVelocity>1100</maxRotVelocity>
-      <motorConstant>8.54858e-06</motorConstant>
-      <momentConstant>0.06</momentConstant>
-      <commandSubTopic>/gazebo/command/motor_speed</commandSubTopic>
-      <motorNumber>3</motorNumber>
-      <rotorDragCoefficient>0.000806428</rotorDragCoefficient>
-      <rollingMomentCoefficient>1e-06</rollingMomentCoefficient>
-      <motorSpeedPubTopic>/motor_speed/3</motorSpeedPubTopic>
-      <rotorVelocitySlowdownSim>10</rotorVelocitySlowdownSim>
-    </plugin> -->
-
-    <!-- <plugin name='back_left_motor_model' filename='librotors_gazebo_motor_model.so'>
-      <robotNamespace></robotNamespace>
-      <jointName>rotor_4_joint</jointName>
-      <linkName>rotor_4</linkName>
-      <turningDirection>cw</turningDirection>
-      <timeConstantUp>0.0125</timeConstantUp>
-      <timeConstantDown>0.025</timeConstantDown>
-      <maxRotVelocity>1100</maxRotVelocity>
-      <motorConstant>8.54858e-06</motorConstant>
-      <momentConstant>0.06</momentConstant>
-      <commandSubTopic>/gazebo/command/motor_speed</commandSubTopic>
-      <motorNumber>0</motorNumber>
-      <rotorDragCoefficient>0.000806428</rotorDragCoefficient>
-      <rollingMomentCoefficient>1e-06</rollingMomentCoefficient>
-      <motorSpeedPubTopic>/motor_speed/0</motorSpeedPubTopic>
-      <rotorVelocitySlowdownSim>10</rotorVelocitySlowdownSim>
-    </plugin> -->
-
-    <!-- <plugin name='front_left_motor_model' filename='librotors_gazebo_motor_model.so'>
-      <robotNamespace></robotNamespace>
-      <jointName>rotor_5_joint</jointName>
-      <linkName>rotor_5</linkName>
-      <turningDirection>ccw</turningDirection>
-      <timeConstantUp>0.0125</timeConstantUp>
-      <timeConstantDown>0.025</timeConstantDown>
-      <maxRotVelocity>1100</maxRotVelocity>
-      <motorConstant>8.54858e-06</motorConstant>
-      <momentConstant>0.06</momentConstant>
-      <commandSubTopic>/gazebo/command/motor_speed</commandSubTopic>
-      <motorNumber>1</motorNumber>
-      <rotorDragCoefficient>0.000806428</rotorDragCoefficient>
-      <rollingMomentCoefficient>1e-06</rollingMomentCoefficient>
-      <motorSpeedPubTopic>/motor_speed/1</motorSpeedPubTopic>
-      <rotorVelocitySlowdownSim>10</rotorVelocitySlowdownSim>
-    </plugin> -->
-<!-- ####################################  /MOTOR PLUGINS  ######################################### -->
-
-<!-- ###################################  MAVLINK PLUGIN  ########################################## -->
-    <!-- <plugin name='mavlink_interface' filename='librotors_gazebo_mavlink_interface.so'>
-      <robotNamespace></robotNamespace>
-      <imuSubTopic>/imu</imuSubTopic>
-      <motorSpeedCommandPubTopic>/gazebo/command/motor_speed</motorSpeedCommandPubTopic>
-      <control_channels>
-
-        <channel name="rotor0">
-          <input_index>0</input_index>
-          <input_offset>1</input_offset>
-          <input_scaling>450</input_scaling>
-          <zero_position_disarmed>0</zero_position_disarmed>
-          <zero_position_armed>100</zero_position_armed>
-          <joint_control_type>velocity</joint_control_type>
-          <joint_name>rotor_4_joint</joint_name>
-        </channel>
-
-        <channel name="rotor1">
-          <input_index>1</input_index>
-          <input_offset>1</input_offset>
-          <input_scaling>450</input_scaling>
-          <zero_position_disarmed>0</zero_position_disarmed>
-          <zero_position_armed>100</zero_position_armed>
-          <joint_control_type>velocity</joint_control_type>
-
-          <joint_name>rotor_5_joint</joint_name>
-        </channel>
-
-        <channel name="rotor2">
-          <input_index>2</input_index>
-          <input_offset>1</input_offset>
-          <input_scaling>450</input_scaling>
-          <zero_position_disarmed>0</zero_position_disarmed>
-          <zero_position_armed>100</zero_position_armed>
-          <joint_control_type>velocity</joint_control_type>
-          <joint_name>rotor_2_joint</joint_name>
-        </channel>
-
-        <channel name="rotor3">
-          <input_index>3</input_index>
-          <input_offset>1</input_offset>
-          <input_scaling>450</input_scaling>
-          <zero_position_disarmed>0</zero_position_disarmed>
-          <zero_position_armed>100</zero_position_armed>
-          <joint_control_type>velocity</joint_control_type>
-          <joint_name>rotor_3_joint</joint_name>
-        </channel>
-
-        <channel name="rotor4">
-          <input_index>4</input_index>
-          <input_offset>1</input_offset>
-          <input_scaling>450</input_scaling>
-          <zero_position_disarmed>0</zero_position_disarmed>
-          <zero_position_armed>100</zero_position_armed>
-          <joint_control_type>velocity</joint_control_type>
-          <joint_name>rotor_0_joint</joint_name>
-        </channel>
-
-        <channel name="rotor5">
-          <input_index>5</input_index>
-          <input_offset>1</input_offset>
-          <input_scaling>450</input_scaling>
-          <zero_position_disarmed>0</zero_position_disarmed>
-          <zero_position_armed>100</zero_position_armed>
-          <joint_control_type>velocity</joint_control_type>
-          <joint_name>rotor_1_joint</joint_name>
-        </channel>
-
-        <channel name="gimbal_roll">
-          <input_index>6</input_index>
-          <input_offset>0</input_offset>
-          <input_scaling>-3.1415</input_scaling>
-          <zero_position_disarmed>0</zero_position_disarmed>
-          <zero_position_armed>0</zero_position_armed>
-          <joint_control_type>position_gztopic</joint_control_type>
-          <gztopic>/gimbal_roll_cmd</gztopic>
-          <joint_name>typhoon_h480::cgo3_camera_joint</joint_name>
-        </channel>
-
-        <channel name="gimbal_pitch">
-          <input_index>7</input_index>
-          <input_offset>0</input_offset>
-          <input_scaling>3.1415</input_scaling>
-          <zero_position_disarmed>0</zero_position_disarmed>
-          <zero_position_armed>0</zero_position_armed>
-          <joint_control_type>position_gztopic</joint_control_type>
-          <gztopic>/gimbal_pitch_cmd</gztopic>
-          <joint_name>typhoon_h480::cgo3_camera_joint</joint_name>
-        </channel>
-
-        <channel name="gimbal_yaw">
-          <input_index>8</input_index>
-          <input_offset>-0.5</input_offset>
-          <input_scaling>-3.1415</input_scaling>
-          <zero_position_disarmed>0</zero_position_disarmed>
-          <zero_position_armed>0</zero_position_armed>
-          <joint_control_type>position_gztopic</joint_control_type>
-          <gztopic>/gimbal_yaw_cmd</gztopic>
-          <joint_name>typhoon_h480::cgo3_vertical_arm_joint</joint_name>
-        </channel>
-
-        <channel name="left_leg">
-          <input_index>9</input_index>
-          <input_offset>1</input_offset>
-          <input_scaling>1</input_scaling>
-          <zero_position_disarmed>0</zero_position_disarmed>
-          <zero_position_armed>0</zero_position_armed>
-          <joint_control_type>position</joint_control_type>
-          <joint_control_pid>
-            <p>50.0</p>
-            <i>0</i>
-            <d>0</d>
-            <iMax>0</iMax>
-            <iMin>0</iMin>
-            <cmdMax>10</cmdMax>
-            <cmdMin>-10</cmdMin>
-          </joint_control_pid>
-          <joint_name>left_leg_joint</joint_name>
-        </channel>
-
-        <channel name="right_leg">
-          <input_index>10</input_index>
-          <input_offset>1</input_offset>
-          <input_scaling>1</input_scaling>
-          <zero_position_disarmed>0</zero_position_disarmed>
-          <zero_position_armed>0</zero_position_armed>
-          <joint_control_type>position</joint_control_type>
-          <joint_control_pid>
-            <p>50.0</p>
-            <i>0</i>
-            <d>0</d>
-            <iMax>0</iMax>
-            <iMin>0</iMin>
-            <cmdMax>10</cmdMax>
-            <cmdMin>-10</cmdMin>
-          </joint_control_pid>
-          <joint_name>right_leg_joint</joint_name>
-        </channel>
-      </control_channels>
-    </plugin> -->
-
-<!-- ###################################  /MAVLINK PLUGIN  ######################################### -->
-
-<!-- ###################################  IMU PLUGIN  ############################################## -->
-    <!-- <plugin name='rotors_gazebo_imu_plugin' filename='librotors_gazebo_imu_plugin.so'>
-      <robotNamespace></robotNamespace>
-      <linkName>imu_link</linkName>
-      <imuTopic>/imu</imuTopic>
-      <gyroscopeNoiseDensity>0</gyroscopeNoiseDensity>
-      <gyroscopeRandomWalk>0</gyroscopeRandomWalk>
-      <gyroscopeBiasCorrelationTime>1000.0</gyroscopeBiasCorrelationTime>
-      <gyroscopeTurnOnBiasSigma>0</gyroscopeTurnOnBiasSigma>
-      <accelerometerNoiseDensity>0</accelerometerNoiseDensity>
-      <accelerometerRandomWalk>0</accelerometerRandomWalk>
-      <accelerometerBiasCorrelationTime>300.0</accelerometerBiasCorrelationTime>
-      <accelerometerTurnOnBiasSigma>0</accelerometerTurnOnBiasSigma>
-    </plugin> -->
-<!-- ##################################  /IMU PLUGIN  ############################################## -->
+        <!-- ign topic -t /f550/command/motor_speed -m ignition.msgs.Actuators -p 'velocity:[700, 700, 700, 700, 700, 700]' -->
+       
+        <!-- <plugin filename="multicopter-motor-model-system-shutdown.so"
+        name="gz::sim::systems::MulticopterMotorModel">
+        <robotNamespace>f550</robotNamespace>
+        <jointName>rotor_0_joint</jointName>
+        <linkName>rotor_0</linkName>
+        <turningDirection>ccw</turningDirection>
+        <timeConstantUp>0.0182</timeConstantUp>
+        <timeConstantDown>0.0182</timeConstantDown>
+        <maxRotVelocity>1000.0</maxRotVelocity>
+        <motorConstant>1.269e-05</motorConstant>
+        <momentConstant>0.016754</momentConstant>
+        <commandSubTopic>command/motor_speed</commandSubTopic>
+        <shutdownSubTopic>shutdown</shutdownSubTopic>
+        <motorNumber>0</motorNumber>
+        <rotorDragCoefficient>2.0673e-04</rotorDragCoefficient>
+        <rotorDragCoefficient>0</rotorDragCoefficient>
+        <rollingMomentCoefficient>0</rollingMomentCoefficient>
+        <motorSpeedPubTopic>motor_speed/0</motorSpeedPubTopic>
+        <rotorVelocitySlowdownSim>2</rotorVelocitySlowdownSim>
+        <motorType>velocity</motorType>
+      </plugin>
+      <plugin filename="multicopter-motor-model-system-shutdown.so"
+        name="gz::sim::systems::MulticopterMotorModel">
+        <robotNamespace>f550</robotNamespace>
+        <jointName>rotor_1_joint</jointName>
+        <linkName>rotor_1</linkName>
+        <turningDirection>cw</turningDirection>
+        <timeConstantUp>0.0182</timeConstantUp>
+        <timeConstantDown>0.0182</timeConstantDown>
+        <maxRotVelocity>1000.0</maxRotVelocity>
+        <motorConstant>1.269e-05</motorConstant>
+        <momentConstant>0.016754</momentConstant>
+        <commandSubTopic>command/motor_speed</commandSubTopic>
+        <shutdownSubTopic>shutdown</shutdownSubTopic>
+        <motorNumber>1</motorNumber>
+        <rotorDragCoefficient>2.0673e-04</rotorDragCoefficient>
+        <rotorDragCoefficient>0</rotorDragCoefficient>
+        <rollingMomentCoefficient>0</rollingMomentCoefficient>
+        <motorSpeedPubTopic>motor_speed/1</motorSpeedPubTopic>
+        <rotorVelocitySlowdownSim>2</rotorVelocitySlowdownSim>
+        <motorType>velocity</motorType>
+      </plugin>
+      <plugin filename="multicopter-motor-model-system-shutdown.so"
+        name="gz::sim::systems::MulticopterMotorModel">
+        <robotNamespace>f550</robotNamespace>
+        <jointName>rotor_2_joint</jointName>
+        <linkName>rotor_2</linkName>
+        <turningDirection>ccw</turningDirection>
+        <timeConstantUp>0.0182</timeConstantUp>
+        <timeConstantDown>0.0182</timeConstantDown>
+        <maxRotVelocity>1000.0</maxRotVelocity>
+        <motorConstant>1.269e-05</motorConstant>
+        <momentConstant>0.016754</momentConstant>
+        <commandSubTopic>command/motor_speed</commandSubTopic>
+        <shutdownSubTopic>shutdown</shutdownSubTopic>
+        <motorNumber>2</motorNumber>
+        <rotorDragCoefficient>2.0673e-04</rotorDragCoefficient>
+        <rotorDragCoefficient>0</rotorDragCoefficient>
+        <rollingMomentCoefficient>0</rollingMomentCoefficient>
+        <motorSpeedPubTopic>motor_speed/2</motorSpeedPubTopic>
+        <rotorVelocitySlowdownSim>2</rotorVelocitySlowdownSim>
+        <motorType>velocity</motorType>
+      </plugin>
+      <plugin filename="multicopter-motor-model-system-shutdown.so"
+        name="gz::sim::systems::MulticopterMotorModel">
+        <robotNamespace>f550</robotNamespace>
+        <jointName>rotor_3_joint</jointName>
+        <linkName>rotor_3</linkName>
+        <turningDirection>cw</turningDirection>
+        <timeConstantUp>0.0182</timeConstantUp>
+        <timeConstantDown>0.0182</timeConstantDown>
+        <maxRotVelocity>1000.0</maxRotVelocity>
+        <motorConstant>1.269e-05</motorConstant>
+        <momentConstant>0.016754</momentConstant>
+        <commandSubTopic>command/motor_speed</commandSubTopic>
+        <shutdownSubTopic>shutdown</shutdownSubTopic>
+        <motorNumber>3</motorNumber>
+        <rotorDragCoefficient>2.0673e-04</rotorDragCoefficient>
+        <rotorDragCoefficient>0</rotorDragCoefficient>
+        <rollingMomentCoefficient>0</rollingMomentCoefficient>
+        <motorSpeedPubTopic>motor_speed/3</motorSpeedPubTopic>
+        <rotorVelocitySlowdownSim>2</rotorVelocitySlowdownSim>
+        <motorType>velocity</motorType>
+      </plugin>
+      <plugin filename="multicopter-motor-model-system-shutdown.so"
+        name="gz::sim::systems::MulticopterMotorModel">
+        <robotNamespace>f550</robotNamespace>
+        <jointName>rotor_4_joint</jointName>
+        <linkName>rotor_4</linkName>
+        <turningDirection>ccw</turningDirection>
+        <timeConstantUp>0.0182</timeConstantUp>
+        <timeConstantDown>0.0182</timeConstantDown>
+        <maxRotVelocity>1000.0</maxRotVelocity>
+        <motorConstant>1.269e-05</motorConstant>
+        <momentConstant>0.016754</momentConstant>
+        <commandSubTopic>command/motor_speed</commandSubTopic>
+        <shutdownSubTopic>shutdown</shutdownSubTopic>
+        <motorNumber>4</motorNumber>
+        <rotorDragCoefficient>2.0673e-04</rotorDragCoefficient>
+        <rotorDragCoefficient>0</rotorDragCoefficient>
+        <rollingMomentCoefficient>0</rollingMomentCoefficient>
+        <motorSpeedPubTopic>motor_speed/4</motorSpeedPubTopic>
+        <rotorVelocitySlowdownSim>2</rotorVelocitySlowdownSim>
+        <motorType>velocity</motorType>
+      </plugin>
+      <plugin filename="multicopter-motor-model-system-shutdown.so"
+        name="gz::sim::systems::MulticopterMotorModel">
+        <robotNamespace>f550</robotNamespace>
+        <jointName>rotor_5_joint</jointName>
+        <linkName>rotor_5</linkName>
+        <turningDirection>cw</turningDirection>
+        <timeConstantUp>0.0182</timeConstantUp>
+        <timeConstantDown>0.0182</timeConstantDown>
+        <maxRotVelocity>1000.0</maxRotVelocity>
+        <motorConstant>1.269e-05</motorConstant>
+        <momentConstant>0.016754</momentConstant>
+        <commandSubTopic>command/motor_speed</commandSubTopic>
+        <shutdownSubTopic>shutdown</shutdownSubTopic>
+        <motorNumber>5</motorNumber>
+        <rotorDragCoefficient>2.0673e-04</rotorDragCoefficient>
+        <rotorDragCoefficient>0</rotorDragCoefficient>
+        <rollingMomentCoefficient>0</rollingMomentCoefficient>
+        <motorSpeedPubTopic>motor_speed/5</motorSpeedPubTopic>
+        <rotorVelocitySlowdownSim>2</rotorVelocitySlowdownSim>
+        <motorType>velocity</motorType>
+      </plugin> -->
 
   </model>
 </sdf>
